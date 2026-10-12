@@ -93,7 +93,6 @@ export const register: Register = (on) => {
       await $.ui.close({ id: PANE });
     }
     $.ui.status(turnOn ? "learning mode" : undefined);
-    if (turnOn) await openPane($, false);
 
     return {
       text: turnOn ? "Learning mode on. Before bigger implementation steps, Claude will quiz you in a side panel." : "Learning mode off.",
@@ -114,9 +113,6 @@ export const register: Register = (on) => {
     if (e.origin.kind === "composer" || e.origin.kind === "bridge") {
       await update($, cleared, () => false);
       await update($, touched, () => []);
-      // Opened while answering the person's prompt, the pane is placed at any width;
-      // an open from the quiz tool alone waits for a 144-column terminal.
-      if (await read($, enabled)) void openPane($, false);
     }
     if (await read($, enabled)) $.ui.status("learning mode");
 

@@ -21,7 +21,7 @@ Answer `y` to add the marketplace, then pick a scope (user scope = all sessions)
 | `/learning-mode`            | Toggle on/off (remembered across sessions)                                                  |
 | `/learning-mode on` / `off` | Turn on / off                                                                               |
 | `/learning-mode status`     | Show whether it's on and if a quiz is pending                                               |
-| `/learning-mode show`       | Reopen the quiz panel if you closed it |
+| `/learning-mode show`       | Reopen the quiz panel (use this if your terminal is too narrow for it to pop up on its own) |
 | `/learning-mode skip`       | Skip the pending quiz and let Claude continue                                               |
 
 ## Customize
