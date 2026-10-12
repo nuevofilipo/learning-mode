@@ -1,0 +1,6 @@
+{
+  "name": "learning-mode",
+  "version": "0.1.0",
+  "description": "Before bigger implementation steps, quizzes you in a side panel on what is about to be built; Claude continues only once you answer correctly.",
+  "types": "./types/index.d.ts"
+}

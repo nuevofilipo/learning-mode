@@ -1,0 +1,5 @@
+{
+  "name": "learning-mode",
+  "owner": { "name": "fcybulski" },
+  "plugins": [{ "name": "learning-mode", "source": "./" }]
+}
